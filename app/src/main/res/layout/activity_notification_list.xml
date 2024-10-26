@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NoticeFormActivity"
+    android:background="@color/white">
+
+    <!-- Top bar with back button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lifeGreenPrimary"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/back_notify"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/i_back"
+            android:contentDescription="Back icon"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="start"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <!-- Notification 1 -->
+    <LinearLayout
+        android:id="@+id/notice_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/notification_background"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:elevation="6dp"
+        android:padding="16dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tv_notice_1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification Title 1"
+            android:textColor="@color/lifeGreenPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_notice_1_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:text="Notification content for the first notification..."
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Notification 2 -->
+    <LinearLayout
+        android:id="@+id/notice_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/notification_background"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:elevation="6dp"
+        android:padding="16dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tv_notice_2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification Title 2"
+            android:textColor="@color/lifeGreenPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_notice_2_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:text="Notification content for the second notification..."
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Notification 3 -->
+    <LinearLayout
+        android:id="@+id/notice_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/notification_background"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:elevation="6dp"
+        android:padding="16dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tv_notice_3_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification Title 3"
+            android:textColor="@color/lifeGreenPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_notice_3_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:text="Notification content for the third notification..."
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

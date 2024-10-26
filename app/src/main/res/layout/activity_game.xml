@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_game">
+
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lifeGreenPrimary"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/i_back"
+            android:contentDescription="Back icon"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="start"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Question 1: Which of the following is a renewable energy source?"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:shadowColor="#80000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="3"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Option 1"
+                android:buttonTint="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radio_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Option 2"
+                android:buttonTint="@color/white" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/lifeGreenPrimary"
+            android:text="ANSWER"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            android:onClick="answerQuestion"
+            android:padding="12dp"
+            android:textAllCaps="true"
+            android:elevation="4dp" />
+    </LinearLayout>
+
+</RelativeLayout>

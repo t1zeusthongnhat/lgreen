@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lifeGreenPrimary"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/back_gift"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/i_back"
+            android:contentDescription="Back icon"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="start"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <!-- First Gift Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:background="#ffffff">
+
+        <!-- Left Section: Gift Information -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="start">
+
+            <ImageView
+                android:id="@+id/giftImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/gift_img"
+                android:contentDescription="Gift Image"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/giftTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gift Title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/giftDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is a description of the gift."
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Point Requirement Layout with Icon -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/pointCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Required Points: 100"
+                    android:textSize="16sp"
+                    android:textColor="#FF5722" />
+
+                <ImageView
+                    android:id="@+id/pointIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:src="@drawable/point"
+                    android:contentDescription="Point icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Right Section: Exchange Button -->
+        <Button
+            android:id="@+id/exchangeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exchange"
+            android:backgroundTint="@color/lifeGreenPrimary"
+            android:textColor="#ffffff"
+            android:padding="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Divider Line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3" />
+
+    <!-- Add additional gift layout as needed, following the same structure -->
+</LinearLayout>

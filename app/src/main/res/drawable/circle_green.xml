@@ -1,0 +1,9 @@
+<!-- res/drawable/circle_green.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#006400"/> <!-- Màu xanh lá cây đậm (dark green) -->
+    <size
+        android:width="100dp"
+        android:height="100dp"/> <!-- Kích thước của hình tròn -->
+</shape>
+

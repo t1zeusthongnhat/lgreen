@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1">
+
+    <item
+        android:icon="@drawable/h"
+        android:id="@+id/navHome"
+        android:title="Home"/>
+    <item
+        android:icon="@drawable/usermana"
+        android:id="@+id/navUser"
+        android:title="User"/>
+    <item
+        android:icon="@drawable/notic"
+        android:id="@+id/navNotice"
+        android:title="Notification"/>
+    </group>
+
+    <group
+        android:id="@+id/group2">
+    <item
+        android:icon="@drawable/planning"
+        android:id="@+id/navUserMana"
+        android:title="User management"/>
+    <item
+        android:icon="@drawable/logout"
+        android:id="@+id/navLogout"
+        android:title="Logout"/>
+    </group>
+<group
+    android:id="@+id/group4">
+    <item
+        android:icon="@drawable/share"
+        android:id="@+id/navShare"
+        android:title="About us"/>
+</group>
+</menu>

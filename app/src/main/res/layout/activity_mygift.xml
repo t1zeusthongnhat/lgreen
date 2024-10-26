@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:background="#f5f5f5">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lifeGreenPrimary"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/back_gift"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/i_back"
+            android:contentDescription="Back icon"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="start"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <!-- Redeemed Gift Item -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:layout_marginTop="8dp"
+        android:elevation="2dp">
+
+        <!-- Gift Image -->
+        <ImageView
+            android:id="@+id/giftImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/gift_img"
+            android:contentDescription="Gift Image"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Gift Details -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/giftTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gift Title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/redeemDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Redeemed on: 01/01/2023"
+                android:textSize="14sp"
+                android:textColor="#757575"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: Active"
+                android:textSize="14sp"
+                android:textColor="#4CAF50"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Redeemed Status -->
+        <TextView
+            android:id="@+id/redeemedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Redeemed"
+            android:background="@drawable/redeemed_background"
+            android:textColor="#ffffff"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:layout_marginTop="8dp"
+        android:elevation="2dp">
+
+        <!-- Gift Image -->
+        <ImageView
+            android:id="@+id/q"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/gift_img"
+            android:contentDescription="Gift Image"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Gift Details -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gift Title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/ed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Redeemed on: 01/01/2023"
+                android:textSize="14sp"
+                android:textColor="#757575"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: Active"
+                android:textSize="14sp"
+                android:textColor="#4CAF50"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Redeemed Status -->
+        <TextView
+            android:id="@+id/j"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Redeemed"
+            android:background="@drawable/redeemed_background"
+            android:textColor="#ffffff"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+
+    <!-- Divider Line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

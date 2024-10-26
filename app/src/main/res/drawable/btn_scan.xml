@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#F3E5F5"/> <!-- Super Light Lavender -->
+            <corners android:radius="15dp"/>
+            <stroke android:color="#CE93D8" android:width="1dp"/> <!-- Light Purple -->
+        </shape>
+    </item>
+</selector>

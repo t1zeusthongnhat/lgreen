@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".NoticeDetailActivity">
+
+    <!-- Top bar -->
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lifeGreenPrimary"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_notify"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/i_back"
+            android:contentDescription="Back icon"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="start"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <!-- ScrollView for content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar"
+        android:paddingBottom="16dp"
+        android:fillViewport="true">
+
+        <!-- Main container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Notification Title -->
+            <TextView
+                android:id="@+id/tv_notice_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notification Title"
+                android:textColor="@color/lifeGreenPrimaryDark"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <!-- Notification Image -->
+            <ImageView
+                android:id="@+id/iv_notice_detail_image"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:contentDescription="Notification image"
+                android:src="@drawable/coca"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp" />
+
+            <!-- TextView for Image description -->
+            <TextView
+                android:id="@+id/tv_image_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Illustration of trash that needs to be exchanged"
+                android:textColor="#707070"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:layout_marginTop="8dp" />
+
+            <!-- Notification Content -->
+            <TextView
+                android:id="@+id/tv_notice_detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notification content..."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/tv_notice_detail_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address: Ha Noi, Viet Nam"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tv_notice_detail_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity: 100"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tv_notice_detail_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Points: 1000"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- TextView for Google Maps description -->
+            <TextView
+                android:id="@+id/tv_map_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Specific address, click to see directions"
+                android:textColor="#707070"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:layout_marginTop="16dp" />
+
+            <!-- Google Maps -->
+            <fragment
+                android:id="@+id/map_view"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="326dp"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
