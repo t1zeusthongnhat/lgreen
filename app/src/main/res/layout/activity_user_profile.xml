@@ -4,25 +4,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="#f5f5f5"
     tools:context=".ProfileActivity"
     android:id="@+id/main"
+
+    android:orientation="vertical"
     >
+
+
 
     <ScrollView
         android:id="@+id/scProfile"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="579dp"
+                android:layout_height="wrap_content"
                 android:elevation="3dp">
 
                 <View
@@ -44,7 +48,24 @@
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/view2"
                     app:layout_constraintTop_toTopOf="@+id/view2" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/back_gift"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/i_back"
+                        android:contentDescription="Back icon"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="start"
+                        android:scaleType="centerInside" />
+                </LinearLayout>
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="wrap_content"
@@ -54,7 +75,7 @@
                     app:layout_constraintStart_toStartOf="@+id/imageView5"
                     app:layout_constraintTop_toTopOf="@+id/imageView5"
                     app:layout_constraintVertical_bias="0.25"
-                    app:srcCompat="@drawable/usss" />
+                    app:srcCompat="@drawable/usermana" />
 
                 <TextView
                     android:id="@+id/textView"
@@ -83,7 +104,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="40dp"
                     android:layout_marginEnd="24dp"
@@ -97,6 +118,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView2"
                     app:layout_constraintVertical_bias="0.0">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -115,15 +137,24 @@
                             android:textColor="#0F7015"
                             android:textSize="18sp" />
 
-                        <TextView
-                            android:id="@+id/textView6"
+                        <EditText
+                            android:id="@+id/etUsername"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Change"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:text="huy"
                             android:textAlignment="textEnd"
                             android:textColor="#5b5b5b"
                             android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/edtUsername"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/ic_edit" />
                     </LinearLayout>
 
                     <View
@@ -151,15 +182,24 @@
                             android:textColor="#0F7015"
                             android:textSize="18sp" />
 
-                        <TextView
-                            android:id="@+id/textView6"
+                        <EditText
+                            android:id="@+id/etPassword"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Change"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:text="123"
                             android:textAlignment="textEnd"
                             android:textColor="#5b5b5b"
                             android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/edtPass"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/ic_edit" />
                     </LinearLayout>
 
                     <View
@@ -187,15 +227,24 @@
                             android:textColor="#0F7015"
                             android:textSize="18sp" />
 
-                        <TextView
-                            android:id="@+id/textView8"
+                        <EditText
+                            android:id="@+id/etMobile"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:background="@null"
+                            android:enabled="false"
                             android:text="+12345678"
                             android:textAlignment="textEnd"
                             android:textColor="#5b5b5b"
                             android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/edtMobile"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/ic_edit" />
                     </LinearLayout>
 
                     <View
@@ -223,15 +272,24 @@
                             android:textColor="#0F7015"
                             android:textSize="18sp" />
 
-                        <TextView
-                            android:id="@+id/textView10"
+                        <EditText
+                            android:id="@+id/etEmail"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:background="@null"
+                            android:enabled="false"
                             android:text="83868386"
                             android:textAlignment="textEnd"
                             android:textColor="#5b5b5b"
                             android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/edtEmail"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/ic_edit" />
                     </LinearLayout>
 
                     <View
@@ -259,18 +317,70 @@
                             android:textColor="#0F7015"
                             android:textSize="18sp" />
 
-                        <TextView
-                            android:id="@+id/textView12"
+                        <EditText
+                            android:id="@+id/etAddress"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:background="@null"
+                            android:enabled="false"
                             android:text="Ha Noi"
                             android:textAlignment="textEnd"
                             android:textColor="#5b5b5b"
                             android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/edtAddress"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/ic_edit" />
                     </LinearLayout>
 
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="6dp"
+                        android:background="#d9d9d9" />
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvGender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Gender:"
+                            android:textColor="#0F7015"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etGender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:text="male"
+                            android:textAlignment="textEnd"
+                            android:textColor="#5b5b5b"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/edtGender"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/ic_edit" />
+                    </LinearLayout>
                 </LinearLayout>
 
 
@@ -283,7 +393,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/primaryColor"
-                android:text="Edit Profile"
+                android:text="Save"
                 android:textColor="#ffffff"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -292,167 +402,5 @@
         </LinearLayout>
 
     </ScrollView>
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="@+id/scProfile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" >
-
-        <com.google.android.material.bottomappbar.BottomAppBar
-            android:id="@+id/app_bar"
-            android:layout_width="match_parent"
-            app:fabCradleMargin="8dp"
-            app:fabCradleRoundedCornerRadius="50dp"
-            app:fabCradleVerticalOffset="6dp"
-            android:layout_height="60dp"
-            android:layout_gravity="bottom"
-            app:backgroundTint="@color/white">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:id="@+id/homeLayout"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView12"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginTop="8dp"
-                        app:srcCompat="@drawable/h" />
-
-                    <TextView
-                        android:id="@+id/trr"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Home"
-                        android:textColor="@color/black"
-                        android:textAlignment="center" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/scan_trash_bottom"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView13"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginTop="8dp"
-                        app:srcCompat="@drawable/scanner" />
-
-                    <TextView
-                        android:id="@+id/textView13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Scan Trash"
-                        android:textColor="@color/black"
-                        android:textAlignment="center" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/invisible"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:visibility="invisible">
-
-                    <ImageView
-                        android:id="@+id/imm"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginTop="8dp"
-                        app:srcCompat="@drawable/scanner" />
-
-                    <TextView
-                        android:id="@+id/txx"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Scan Trash"
-                        android:textAlignment="center"
-                        android:textColor="@color/black" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView14"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginTop="8dp"
-                        app:srcCompat="@drawable/mgf" />
-
-                    <TextView
-                        android:id="@+id/textView14"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="My Gift"
-                        android:textColor="@color/black"
-                        android:textAlignment="center" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/userLayout"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:id="@+id/imageView15"
-                        android:layout_marginTop="8dp"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        app:srcCompat="@drawable/us" />
-
-                    <TextView
-                        android:id="@+id/textView15"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="User"
-                        android:textColor="@color/black"
-                        android:textAlignment="center" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-        </com.google.android.material.bottomappbar.BottomAppBar>
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-           android:id="@+id/circle_home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_anchor="@id/app_bar"
-            app:maxImageSize="35dp"
-            android:backgroundTint="@color/lifeGreenPrimary"
-            app:tint="@color/white"
-            android:src="@drawable/bottom"/>
-
-
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

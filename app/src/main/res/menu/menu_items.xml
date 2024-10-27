@@ -3,11 +3,6 @@
 
     <group
         android:id="@+id/group1">
-
-    <item
-        android:icon="@drawable/h"
-        android:id="@+id/navHome"
-        android:title="Home"/>
     <item
         android:icon="@drawable/usermana"
         android:id="@+id/navUser"
@@ -28,6 +23,10 @@
         android:icon="@drawable/logout"
         android:id="@+id/navLogout"
         android:title="Logout"/>
+        <item
+            android:icon="@drawable/remove_user"
+            android:id="@+id/navRemove"
+            android:title="Remove Account"/>
     </group>
 <group
     android:id="@+id/group4">
