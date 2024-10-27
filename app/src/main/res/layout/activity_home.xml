@@ -14,8 +14,12 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="#FFFFFF"
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/black"
         app:headerLayout="@layout/drawer_header"
         app:menu="@menu/drawer_menu" />
+
     <ScrollView
         android:id="@+id/scrollView2"
         android:background="@color/white"
@@ -332,8 +336,9 @@
             </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="348dp"
+                android:layout_width="345dp"
                 android:layout_height="158dp"
+                android:layout_gravity="center"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/bottom_banner_background">
