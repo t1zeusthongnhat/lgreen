@@ -1,10 +1,10 @@
 package com.example.lgreen;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -65,9 +65,8 @@ public class HomeActivity extends AppCompatActivity {
                         } else if (id == R.id.nav_profile) {
                             Log.d(TAG, "Navigating to ProfileActivity");
                             startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
-                        } else if (id == R.id.nav_settings) {
+                        } else if (id == R.id.navRemove) {
                             Log.d(TAG, "Navigating to DictionaryActivity");
-                            startActivity(new Intent(HomeActivity.this, DictionaryActivity.class));
                         } else if (id == R.id.nav_logout) {
                             Log.d(TAG, "Logging out");
                             Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
@@ -88,9 +87,7 @@ public class HomeActivity extends AppCompatActivity {
         setupOtherButtons();
     }
 
-
     // Hàm thiết lập các sự kiện cho các nút khác
-
     private void setupOtherButtons() {
         ImageView notice = findViewById(R.id.iconBell);
         AppCompatButton scan = findViewById(R.id.scan_trash_layout);

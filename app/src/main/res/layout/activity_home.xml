@@ -9,6 +9,7 @@
     tools:context=".HomeActivity">
     <include
         layout="@layout/activity_main_content"/>
+    <!-- res/layout/activity_home.xml -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"
         android:layout_width="wrap_content"

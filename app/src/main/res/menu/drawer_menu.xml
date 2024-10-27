@@ -3,17 +3,26 @@
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/i_home"
-        android:title="Home" />
+        android:title="Home"
+        android:background="@drawable/nav_item_background" />
     <item
         android:id="@+id/nav_profile"
         android:icon="@drawable/i_user"
-        android:title="Profile" />
+        android:title="Profile"
+        android:background="@drawable/nav_item_background" />
     <item
-        android:id="@+id/nav_settings"
-        android:icon="@drawable/settings"
-        android:title="Settings" />
+        android:id="@+id/navRemove"
+        android:icon="@drawable/remove_user"
+        android:title="Remove Account"
+        android:background="@drawable/nav_item_background" />
     <item
         android:id="@+id/nav_logout"
         android:icon="@drawable/logout"
-        android:title="Logout" />
+        android:title="Logout"
+        android:background="@drawable/nav_item_background" />
+    <item
+        android:id="@+id/navShare"
+        android:icon="@drawable/share"
+        android:title="About us"
+        android:background="@drawable/nav_item_background" />
 </menu>
